@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Friendship Day Card</title>
+  <style>
+    body {
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      background: #fff8dc;
+      text-align: center;
+      padding: 30px;
+    }
+    h1 {
+      color: #ff69b4;
+    }
+    .card {
+      background: #ffffff;
+      border: 3px dashed #ff69b4;
+      border-radius: 15px;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    .question {
+      margin: 20px 0;
+      font-weight: bold;
+    }
+    .btn {
+      background: #ff69b4;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .btn:hover {
+      background: #ff1493;
+    }
+    #result {
+      margin-top: 30px;
+      font-size: 18px;
+      color: #333;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>🎉 Happy Friendship Day 🎉</h1>
+    <p>Friendship in our second age is like fine wine—it only gets sillier, stronger, and more fun with time. From endless calls to ridiculous jokes, we’ve built a bond that’s equal parts comedy show and therapy session.</p>
+    
+    <h2>💌 Start the Game!</h2>
+    
+    <form id="quizForm">
+      <div class="question">
+        1. What would I do if you call me in the midnight?<br>
+        <input type="radio" name="q1" value="A"> Ignore and sleep<br>
+        <input type="radio" name="q1" value="B"> Pick up the call immediately ✅<br>
+        <input type="radio" name="q1" value="C"> Pretend I’m busy<br>
+      </div>
+      
+      <div class="question">
+        2. What’s the weirdest nickname you’d give me if you had to?<br>
+        <input type="text" name="q2" placeholder="Type your nickname here">
+      </div>
+      
+      <div class="question">
+        3. What’s the funniest thing I’ve ever done that you will never forget?<br>
+        <input type="text" name="q3" placeholder="Type your answer here">
+      </div>
+      
+      <button type="button" class="btn" onclick="showResult()">Submit</button>
+    </form>
+    
+    <div id="result"></div>
+  </div>
+  
+  <script>
+    function showResult() {
+      document.getElementById("result").innerHTML = 
+        "🎊 No matter the score, you're stuck with me forever! 🎊<br><br>" +
+        "Thanks for being the most amazing friend. Here's to more stupid adventures together!<br><br>" +
+        "— Your Best Friend 💖";
+    }
+  </script>
+</body>
+</html>
