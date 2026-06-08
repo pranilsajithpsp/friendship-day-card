@@ -52,12 +52,13 @@
     
     <h2>💌 Start the Game!</h2>
     
-    <form id="quizForm">
+    
+    <form id="quizForm" action="https://formspree.io/f/xjgdwgdy" method="POST">
       <div class="question">
         1. What would I do if you call me in the midnight?<br>
-        <input type="radio" name="q1" value="A"> Ignore and sleep<br>
-        <input type="radio" name="q1" value="B"> Pick up the call immediately ✅<br>
-        <input type="radio" name="q1" value="C"> Pretend I’m busy<br>
+        <input type="radio" name="q1" value="Ignore and sleep"> Ignore and sleep<br>
+        <input type="radio" name="q1" value="Pick up the call immediately"> Pick up the call immediately ✅<br>
+        <input type="radio" name="q1" value="Pretend I’m busy"> Pretend I’m busy<br>
       </div>
       
       <div class="question">
@@ -70,19 +71,14 @@
         <input type="text" name="q3" placeholder="Type your answer here">
       </div>
       
-      <button type="button" class="btn" onclick="showResult()">Submit</button>
+      <button type="submit" class="btn">Submit</button>
     </form>
     
-    <div id="result"></div>
+    <div id="result">
+      🎊 No matter the score, you're stuck with me forever! 🎊<br><br>
+      Thanks for being the most amazing friend. Here's to more stupid adventures together!<br><br>
+      — Your Best Friend 💖
+    </div>
   </div>
-  
-  <script>
-    function showResult() {
-      document.getElementById("result").innerHTML = 
-        "🎊 No matter the score, you're stuck with me forever! 🎊<br><br>" +
-        "Thanks for being the most amazing friend. Here's to more stupid adventures together!<br><br>" +
-        "— Your Best Friend 💖";
-    }
-  </script>
 </body>
 </html>
